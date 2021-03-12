@@ -726,9 +726,9 @@ def main():
     start_time = time.time()
 
     
-    # multiprocess(6, POPU_SIZE, MAX_GEN, CROSS_RATE,
-    #              MUTATE_RATE, stories, save_path)
-    start_run(1, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stories, save_path[0], 0, 0)
+    multiprocess(6, POPU_SIZE, MAX_GEN, CROSS_RATE,
+                 MUTATE_RATE, stories, save_path)
+    # start_run(1, POPU_SIZE, MAX_GEN, CROSS_RATE, MUTATE_RATE, stories, save_path[0], 0, 0)
 
     print("--- %s mins ---" % ((time.time() - start_time)/(60.0*len(stories))))
 
